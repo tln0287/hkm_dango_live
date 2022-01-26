@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Contact,SocialMedia
+from .models import Contact,SocialMedia,ContactQueries
 
 
 
@@ -16,3 +16,10 @@ class SocialMediaAdmin(admin.ModelAdmin):
     list_filter = ['name',]
 
 admin.site.register(SocialMedia,SocialMediaAdmin)
+
+class ContactQueriesAdmin(admin.ModelAdmin):
+
+    list_display = ['name','email']
+    list_filter = ['name',]
+
+admin.site.register(ContactQueries,ContactQueriesAdmin)

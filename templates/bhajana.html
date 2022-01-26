@@ -42,8 +42,13 @@
                                 <div class="blog__content">
 
                                     <h3 class="blog-title mb-20"><a href="blog-details.html">{{i.title}}</a></h3>
+                                    <audio controls>
+  <source src="horse.ogg" type="audio/ogg">
+  <source src="/media/{{i.file |safe}}" type="audio/mpeg">
 
-                                        {{i.content |safe}}
+</audio>
+
+
                                 </div>
                             </div>
                         </div>

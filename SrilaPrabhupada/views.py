@@ -33,3 +33,7 @@ def bhajana(request):
     context = dict()
     context['data'] = data
     return render(request, 'bhajana.html',context)
+
+def bbooks(request):
+
+    return render(request, 'bbooks.html')

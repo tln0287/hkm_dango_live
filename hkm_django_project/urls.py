@@ -15,6 +15,7 @@ urlpatterns = [
     path('', include('Gallery.urls')),
     path('', include('festivals.urls')),
     path('', include('Seva.urls')),
+    path('', include('activities.urls')),
     path('', include('contact.urls')),
     path('', include('donate.urls')),
 
